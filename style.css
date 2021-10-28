@@ -23,7 +23,10 @@ h1 {
     color: #161616;
 }
 
-p {
+p,
+img,
+section,
+div {
     margin: 0;
     padding: 0;
 }
@@ -124,5 +127,9 @@ p {
 }
 
 .house-info-img {
-    margin-top: 90px;
+    margin-top: 92px;
+}
+
+.chill-content {
+    display: flex;
 }
