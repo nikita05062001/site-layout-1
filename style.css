@@ -130,6 +130,52 @@ div {
     margin-top: 92px;
 }
 
+.chill-plus {
+    margin-top: -5px;
+}
+
 .chill-content {
     display: flex;
+}
+
+.chill-info {
+    width: 500px;
+    margin: 0 90px;
+    margin-top: 75px;
+}
+
+.title-chill {
+    font-weight: medium;
+    font-size: 64px;
+    line-height: 130%;
+}
+
+.description-chill {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 160%;
+    margin-top: 25px;
+}
+
+.chill-button {
+    border: 2px solid #219653;
+    box-sizing: border-box;
+    border-radius: 65px;
+    background-color: white;
+
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: 500;
+    font-size: 20px;
+    line-height: 23px;
+    text-align: center;
+    color: #219653;
+    margin-top: 50px;
+}
+
+.text-chill-button {
+    margin: 32px 40px;
+    margin-top: 32px;
 }
