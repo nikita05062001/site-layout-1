@@ -476,4 +476,39 @@ ul {
     width: 50%;
     margin-top: -1px;
     margin-bottom: -4px;
+    position: relative;
+}
+
+.house-price-img-container-mini {
+    position: absolute;
+    top: 92.4%;
+    left: 50.2%;
+    display: flex;
+    transform: translate(-50%, -50%);
+    width: 545px;
+    justify-content: center;
+}
+
+.house-price-img-mini {
+    margin: 0 10px;
+}
+
+.house-price-info-prew-unit {
+    margin-top: 33px;
+    margin-right: -30px;
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 38px;
+    color: #161616;
+}
+
+.last-two-element-price {
+    margin-top: 25px;
+}
+
+.house-price-info-prew-unit-last {
+    margin-left: 37px;
+    margin-right: -33px;
 }
