@@ -189,8 +189,8 @@ ul {
 }
 
 .chill-button-pos {
-    margin-top: 49px;
-    margin-left: 1px;
+    margin-top: 50px;
+    margin-left: 0px;
 }
 
 .chill-button-2 {
@@ -212,7 +212,7 @@ ul {
 }
 
 .text-chill-button {
-    margin: 30px 32px;
+    margin: 30px 35px;
 }
 
 .chill-img-2 {
@@ -385,7 +385,7 @@ ul {
     width: 45%;
     margin-left: 90px;
     margin-top: 74px;
-
+    padding-right: 5px;
 }
 
 .house-price-info-title {
@@ -447,8 +447,8 @@ ul {
 
 .house-price-info-button {
     display: flex;
-    margin-top: 49px;
-    margin-left: 4px;
+    margin-top: 50px;
+    margin-left: 0px;
 }
 
 .house-price-info-price {
@@ -457,8 +457,8 @@ ul {
     font-size: 40px;
     line-height: 38px;
     color: #161616;
-    margin-left: 39px;
-    margin-top: 25px;
+    margin-left: 37px;
+    margin-top: 26px;
 }
 
 .house-price-info-unit {
@@ -468,12 +468,12 @@ ul {
     font-size: 18px;
     line-height: 38px;
     color: #161616;
-    margin-top: 33px;
-    margin-left: 6px;
+    margin-top: 34px;
+    margin-left: 7px;
 }
 
 .house-price-info-img {
     width: 50%;
     margin-top: -1px;
-    margin-left: 5px;
+    margin-bottom: -4px;
 }
