@@ -491,6 +491,11 @@ ul {
 
 .house-price-img-mini {
     margin: 0 10px;
+    transition: scale .2s linear;
+}
+
+.house-price-img-mini:hover {
+    scale: 1.5;
 }
 
 .house-price-info-prew-unit {
