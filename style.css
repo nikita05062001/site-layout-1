@@ -575,3 +575,84 @@ ul {
 .show-place-title-p {
     margin-top: -1.4px;
 }
+
+.comments-content-title {
+    font-weight: 500;
+    font-size: 64px;
+    line-height: 23px;
+    color: #161616;
+}
+
+.comments {
+    margin-top: 100px;
+    margin-left: 180px;
+}
+
+.comments-content-title {
+    margin-bottom: 80px;
+}
+
+
+.comments-user-grade {
+    max-width: 170px;
+}
+
+.comments-content-user {
+    display: flex;
+    margin-bottom: 64px;
+}
+
+.comments-content-stars {
+    display: flex;
+    justify-content: space-between;
+    width: 140px;
+    margin-top: 5px;
+    margin-left: 8px;
+}
+
+.comments-content-star {
+    margin: 0 6px;
+}
+
+.comments-content-star:last-child {
+    margin-right: 0px;
+}
+
+.commetns-user-name-and-date {
+    display: flex;
+}
+
+.comments-user-text-content {
+    margin-left: 50px;
+}
+
+.comments-user-name {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 32px;
+    line-height: 23px;
+    margin-top: 9.5px;
+}
+
+.comments-user-date {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 23px;
+    color: #434343;
+    margin-top: 15px;
+    margin-left: 30px;
+}
+
+.comments-user-text {
+    max-width: 1520px;
+    margin-top: 25px;
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 24px;
+    line-height: 38px;
+    color: #161616;
+}
