@@ -379,7 +379,7 @@ header {
 .chill-img-2 {
     margin-top: -3px;
     margin-left: 17px;
-    width: 50%;
+    width: 60.97%;
 }
 
 .features-content {
@@ -543,14 +543,12 @@ header {
     flex-wrap: nowrap;
 }
 
-.house-price .container {
-    max-width: 1930px;
-}
 
 .house-price-info {
     width: 45%;
     margin-left: 90px;
     margin-top: 74px;
+    padding-right: 5px;
 }
 
 .house-price-info-img {
@@ -561,7 +559,11 @@ header {
     clear: right;
     scale: 1;
     margin-bottom: -2px;
-    margin-right: -5px;
+    margin-right: 0px;
+}
+
+.house-price-info-img-hiden {
+    overflow: hidden;
 }
 
 
@@ -695,7 +697,7 @@ header {
 
 .showplace-content {
     display: flex;
-    flex-wrap: wrap;
+    flex-wrap: nowrap;
 }
 
 .showplace-info {
@@ -937,6 +939,86 @@ header {
 
     .body-content {
         margin-top: -5px;
+    }
+
+    .house-price-info {
+        width: 46%;
+        margin-left: 90px;
+    }
+
+    .house-price-info-img {
+        width: 50%;
+        margin-right: 0px;
+        margin-top: -1px;
+    }
+
+    .house-price-img-margin-right {
+        margin-right: 0px;
+    }
+
+    .house-price-overflow {
+        overflow: hidden;
+    }
+
+    .house-price-info-padding {
+        padding-left: 8px;
+    }
+
+    .showplace-info {
+        margin: 77px 50px 75px 90px;
+    }
+
+    .show-place-img {
+        margin-top: -2px;
+    }
+
+    .show-place-img-2 {
+        /* margin-top: -4px;
+        padding-left: 20px; */
+        background-image: url(img/show-place/img-2.jpg);
+
+        background-position: center center;
+        background-size: cover;
+        margin-left: 36px;
+        margin-top: -3px;
+        background-repeat: no-repeat;
+        height: 532px;
+        width: 1170px;
+    }
+
+    .display-none {
+        display: none;
+    }
+
+    .showplace-title-margin-top {
+        margin-top: 73px;
+    }
+
+    .comments {
+        margin-top: 102px;
+        margin-left: 90px;
+    }
+
+    .comments-content-user {
+        margin-bottom: 68px;
+    }
+
+    .comments-content-stars {
+        margin-top: 7px;
+    }
+
+    .geolocation {
+        margin-left: 90px;
+        margin-top: 116px;
+        max-width: 1740px;
+    }
+
+    .geolocation-info {
+        margin-top: 65px;
+    }
+
+    .geolocation-messenger p {
+        margin-top: 71px;
     }
 }
 
