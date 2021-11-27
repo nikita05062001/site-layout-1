@@ -246,6 +246,11 @@ header {
     font-size: 20px;
     font-weight: 500;
     cursor: pointer;
+    transition: background-color .2s linear;
+}
+
+.button-header:hover {
+    background-color: rgb(132, 255, 212);
 }
 
 .burger {
@@ -331,6 +336,10 @@ header {
     padding-right: 73px;
 }
 
+.displey-chill {
+    display: flex;
+}
+
 .chill-container {
     margin-top: 2px;
 }
@@ -354,6 +363,16 @@ header {
     margin-top: 25px;
 }
 
+.description-chill-none {
+    font-family: Ubuntu;
+    font-style: normal;
+    font-weight: normal;
+    font-size: 18px;
+    line-height: 38px;
+    margin-top: 25px;
+    display: none;
+}
+
 .chill-button {
     border: 2px solid #219653;
     box-sizing: border-box;
@@ -368,6 +387,11 @@ header {
     text-align: center;
     color: #219653;
     cursor: pointer;
+    transition: background-color .2s linear;
+}
+
+.chill-button:hover {
+    background-color: #E1FFEE;
 }
 
 .chill-button-pos {
@@ -391,6 +415,11 @@ header {
     margin-top: 49px;
     margin-left: 0px;
     cursor: pointer;
+    transition: background-color .2s linear;
+}
+
+.chill-button-2:hover {
+    background-color: #E1FFEE;
 }
 
 .text-chill-button {
@@ -398,7 +427,7 @@ header {
 }
 
 .chill-img-2 {
-    margin-top: -3px;
+    margin-top: -5px;
     margin-left: 17px;
     width: 60.97%;
 }
@@ -1041,6 +1070,35 @@ header {
     .geolocation-messenger p {
         margin-top: 71px;
     }
+
+}
+
+@media (max-width: 1919px) {
+    .chill-img {
+        width: 65%;
+        overflow: hidden;
+    }
+
+    .chill-img-2 {
+        width: 60%;
+        overflow: hidden;
+    }
+
+    .chill-info-2 {
+        padding-right: 89px;
+    }
+
+    .display-br {
+        display: none;
+    }
+
+    .house-price-prewiev-img {
+        width: 60%;
+    }
+
+    .house-price-prewiev-img img {
+        width: 100%;
+    }
 }
 
 @media (max-width: 1814px) {
@@ -1070,6 +1128,19 @@ header {
     .header-contact {
         margin-right: 25px;
     }
+
+    .chill-img-2 img {
+        margin-left: -100px;
+    }
+
+    .house-price-prewiev-description {
+        margin-left: 30px;
+    }
+
+    .house-price-prewiev-title {
+        margin: 0;
+        margin-left: 30px;
+    }
 }
 
 @media (max-width: 1618px) {
@@ -1080,6 +1151,53 @@ header {
     .button-header {
         font-size: 16px;
     }
+
+    .chill-img-2 img {
+        margin-left: -150px;
+    }
+}
+
+@media (max-width: 1600px) {
+    .chill-info-1 {
+        margin-left: 30px;
+    }
+
+    .chill-img-2 img {
+        margin-left: -150px;
+    }
+
+    .chill-info-2 {
+        padding-right: 30px;
+        margin-left: 30px;
+    }
+
+    .features-container {
+        width: 50%;
+    }
+
+    .features-container img {
+        width: 100%;
+    }
+
+}
+
+@media (max-width: 1550px) {
+    .chill-img-2 img {
+        margin-left: -225px;
+    }
+
+    .house-price-prewiev-description {
+        font-size: 18px;
+        margin: 25px;
+        margin-top: 15px;
+        line-height: 28.8px;
+    }
+
+    .house-price-prewiev-title {
+        margin: 0;
+        margin-left: 25px;
+        font-size: 30px;
+    }
 }
 
 @media (max-width: 1432px) {
@@ -1089,6 +1207,19 @@ header {
 
     .button-header {
         font-size: 14px;
+    }
+
+    .chill-info-1 {
+        margin-left: 10px;
+    }
+
+    .chill-info-2 {
+        padding-right: 10px;
+        margin-left: 10px;
+    }
+
+    .chill-img-2 img {
+        margin-left: -250px;
     }
 }
 
@@ -1124,23 +1255,94 @@ header {
 
     .button-header {
         width: 700px;
-        height: 65px;
+        height: 75px;
     }
 
     .house-img {
         max-width: 66.666666666%;
         height: 760px;
         margin-top: 5px;
-        position: relative;
     }
 
     .house-img img {
-        position: absolute;
-        left: -100px;
+        margin-left: -400px;
     }
 
     .button-header a {
         margin-left: 0;
+    }
+
+    .chill-img {
+        width: 100%;
+        overflow: visible;
+        margin-left: 0;
+    }
+
+    .chill-img img {
+        width: 100%;
+    }
+
+
+    .chill-img-2 {
+        width: 100%;
+        overflow: visible;
+        margin-left: 0;
+    }
+
+    .chill-img-2 img {
+        margin-left: 0;
+        width: 100%;
+    }
+
+    .displey-chill {
+        display: flex;
+        flex-wrap: wrap;
+        flex-flow: column-reverse;
+        width: 100%;
+    }
+
+    .chill-info-1 {
+        padding-bottom: 25px;
+        margin-top: 25px;
+    }
+
+    .chill-info-2 {
+        padding-right: 0;
+        padding-bottom: 25px;
+        margin-top: 25px;
+    }
+
+    .margin-auto {
+        margin: 0 auto;
+    }
+
+    .width-100 {
+        width: 100%;
+    }
+
+    .house-price-prewiev-content {
+        display: flex;
+        flex-wrap: wrap;
+    }
+
+    .house-price-prewiev-img {
+        width: 100%;
+    }
+
+    .house-price-prewiev-img img {
+        width: 100%;
+    }
+
+    .house-price-prewiev-text {
+        margin: 0 auto;
+        width: 360px;
+    }
+}
+
+@media (max-width: 1279px) {
+    .features-container {
+        width: 100%;
+        height: 650px;
     }
 }
 
@@ -1152,6 +1354,10 @@ header {
     .house-img img {
         left: -400px;
     }
+
+    .features-container {
+        height: 550px;
+    }
 }
 
 @media (max-width: 940px) {
@@ -1161,8 +1367,13 @@ header {
         flex-flow: column-reverse;
     }
 
+    .header-logo img {
+        width: 37px;
+        height: 41px;
+    }
+
     .house-img {
-        margin-top: -4px;
+        margin-top: -5px;
         max-width: 100%;
         overflow: hidden;
         position: static;
@@ -1174,6 +1385,7 @@ header {
 
     .house-img img {
         position: static;
+        margin-left: 0px;
     }
 
     .house-info {
@@ -1190,6 +1402,10 @@ header {
     }
 
     .house-info-main {}
+
+    .button-header {
+        height: 65px;
+    }
 
     .house-info-img img {
         width: 100%;
@@ -1212,7 +1428,73 @@ header {
         font-size: 18px;
         width: 300px;
         line-height: 29px;
-        margin-top: 15px;
+        margin-top: 19px;
+    }
+
+    .title-chill {
+        font-size: 30px;
+    }
+
+    .none-block {
+        display: none;
+    }
+
+    .description-chill {
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .description-chill-none {
+        display: block;
+        font-size: 18px;
+        line-height: 28px;
+    }
+
+    .chill-info-1 {
+        margin: 25px;
+        padding: 0;
+    }
+
+    .chill-info-2 {
+        margin: 25px;
+        padding: 0;
+    }
+
+    .features-container {
+        height: 500px;
+    }
+
+    .features-text {
+        font-size: 18px;
+    }
+
+    .show-place-features-text p {
+        font-size: 18px;
+    }
+
+    .show-place-features-text-last p {
+        font-size: 18px;
+    }
+
+    .arrow-img {
+        display: none;
+    }
+
+    .arrow-img-last {
+        display: none;
+    }
+
+    .show-place-features-content {
+        top: 50%;
+        left: 50%;
+    }
+
+    .features-display-none {
+        display: none;
+    }
+
+    .features-height {
+        height: 158px;
     }
 }
 
@@ -1229,17 +1511,61 @@ header {
         position: absolute;
         left: -400px;
     }
+
+    .features-container {
+        height: 450px;
+    }
+
+    .features-height {
+        height: 158px;
+    }
+}
+
+@media (max-width: 685px) {
+    .features-container {
+        height: 360px;
+    }
+
+    .features-height {
+        height: 158px;
+    }
+}
+
+@media (max-width: 600px) {
+    .features-container {
+        height: 300px;
+    }
+
+    .features-height {
+        height: 158px;
+    }
 }
 
 @media (max-width: 500px) {
     .button-header {
         width: 250px;
     }
+
+    .features-container {
+        overflow: hidden;
+    }
+
+    .features-container img {
+        scale: 1.5;
+    }
 }
 
-@media (max-width: 500px) {
+@media (max-width: 450px) {
     .button-header {
         width: 205px;
+    }
+
+    .features-container img {
+        scale: 1.6;
+    }
+
+    .features-container img {
+        margin-left: -30px;
     }
 }
 
@@ -1266,5 +1592,23 @@ header {
 
     .house-info-center {
         margin-left: 24px;
+    }
+
+    .chill-button p {
+        margin: 28px 90px;
+        font-size: 16px;
+    }
+
+    .chill-button-2 p {
+        margin: 28px 90px;
+        font-size: 16px;
+    }
+
+    .show-place-features-last {
+        height: 158px;
+    }
+
+    .features-height {
+        height: 158px;
     }
 }
