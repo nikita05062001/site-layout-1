@@ -588,6 +588,7 @@ header {
     margin-top: -2px;
 }
 
+
 .house-price-content {
     display: flex;
     flex-wrap: nowrap;
@@ -605,9 +606,6 @@ header {
     width: 50%;
     margin-top: -1px;
     position: relative;
-    pointer-events: none;
-    clear: right;
-    scale: 1;
     margin-bottom: -2px;
     margin-right: 0px;
 }
@@ -680,6 +678,10 @@ header {
     margin-left: 0px;
 }
 
+.house-price-info-content {
+    display: flex;
+}
+
 .house-price-info-price {
     font-style: normal;
     font-weight: normal;
@@ -710,6 +712,16 @@ header {
     transform: translate(-50%, -50%);
     width: 545px;
     justify-content: center;
+}
+
+.house-price-mini-content {
+    display: none;
+    font-size: 18px;
+    color: white;
+    position: absolute;
+    left: 50%;
+    top: 92%;
+    transform: translate(-50%, -50%);
 }
 
 .house-price-img-mini {
@@ -1099,6 +1111,28 @@ header {
     .house-price-prewiev-img img {
         width: 100%;
     }
+
+    .house-price-info-img {
+        width: 50%;
+        margin-top: -3px;
+        z-index: 0;
+    }
+
+    .house-price-info-img img {
+        width: 103.4%;
+        overflow: hidden;
+    }
+
+    .show-place-img-2 {
+        margin-top: -5px;
+        z-index: 0;
+    }
+}
+
+@media (max-width: 1867px) {
+    .showplace-info {
+        margin: 50px 50px 50px 50px;
+    }
 }
 
 @media (max-width: 1814px) {
@@ -1117,6 +1151,40 @@ header {
 
     .house-info-img {
         max-width: 33.333333333333333333333%;
+    }
+
+    .house-price-info {
+        margin-left: 45px;
+        width: 48.5%;
+        margin-top: 40px;
+    }
+
+    .show-place-img {
+        width: 66.66666%;
+    }
+
+    .show-place-img img {
+        width: 100%;
+    }
+
+    .show-place-img-2 {
+        width: 67.66666666666666%;
+        margin-top: -3px;
+        margin-left: 0px;
+    }
+
+    .show-place-img-2 img {
+        width: 100%;
+    }
+}
+
+@media (max-width: 1740px) {
+    .showplace-info {
+        margin: 25px 25px 25px 25px;
+    }
+
+    .show-place-img-2 {
+        margin-top: -4px;
     }
 }
 
@@ -1141,6 +1209,36 @@ header {
         margin: 0;
         margin-left: 30px;
     }
+
+
+}
+
+@media (max-width: 1645px) {
+    .showplace-content {
+        flex-wrap: wrap;
+    }
+
+    .show-place-img {
+        width: 100%;
+    }
+
+    .show-place-img-2 {
+        width: 100%;
+    }
+
+    .flex-column-reverse {
+        flex-flow: column-reverse;
+    }
+
+    .showplace-info {
+        margin: 0 auto;
+        margin-bottom: 25px;
+        width: 50%;
+    }
+
+    .showplace-text {
+        margin-top: 10px;
+    }
 }
 
 @media (max-width: 1618px) {
@@ -1154,6 +1252,37 @@ header {
 
     .chill-img-2 img {
         margin-left: -150px;
+    }
+
+    .house-price-content {
+        flex-wrap: wrap;
+    }
+
+    .house-price-content:nth-child(2n+1) {
+        flex-flow: column-reverse;
+    }
+
+    .house-price-info {
+        margin: 0 auto;
+        margin-bottom: 25px;
+    }
+
+    .house-price-info-img {
+        width: 100%;
+    }
+
+    .house-price-img-container-mini {
+        scale: 1.8;
+        left: 63%;
+    }
+
+    .text-nowrap {
+        white-space: nowrap;
+    }
+
+    .house-price-info-list-ul {
+        flex-wrap: wrap;
+        width: 110%;
     }
 }
 
@@ -1220,6 +1349,10 @@ header {
 
     .chill-img-2 img {
         margin-left: -250px;
+    }
+
+    .house-price-img-container-mini {
+        left: 66%;
     }
 }
 
@@ -1337,12 +1470,78 @@ header {
         margin: 0 auto;
         width: 360px;
     }
+
+    .house-price-info-title {
+        font-size: 30px;
+        line-height: 42px;
+    }
+
+    .house-price-info-characteristic {
+        font-size: 20px;
+        line-height: 30px;
+    }
+
+    .house-price-info-list-li {
+        font-size: 16px;
+        line-height: 26px;
+    }
+
+    .house-price-info-text {
+        font-size: 18px;
+    }
+
+    .chill-button {
+        font-size: 16px;
+    }
+
+    .house-price-info-price {
+        font-size: 30px;
+    }
+
+    .house-price-info-unit {
+        font-size: 16px;
+    }
+
+    .showplace-text {
+        font-size: 18px;
+        line-height: 29px;
+    }
+
+    .showplace-title {
+        font-size: 30px;
+        line-height: 42px;
+    }
+
+    .showplace-info {
+        width: 95%;
+    }
+
+    .showplace-info {
+        margin-top: 10px;
+    }
+
+    .showplace-img-container {
+        flex-wrap: wrap;
+    }
+
+    .showplace-mini-img {
+        width: 100%;
+        margin-top: -4px;
+    }
+
+    .showplace-mini-img img {
+        width: 100%;
+    }
 }
 
 @media (max-width: 1279px) {
     .features-container {
         width: 100%;
         height: 650px;
+    }
+
+    .house-price-img-container-mini {
+        left: 68%;
     }
 }
 
@@ -1357,6 +1556,23 @@ header {
 
     .features-container {
         height: 550px;
+    }
+
+    .house-price-img-container-mini {
+        scale: 1.4;
+        left: 61%;
+    }
+
+    .house-price-info-list-li {
+        margin-top: 5px;
+    }
+
+    .house-price-info-list-li:nth-child(4) {
+        padding-left: 0px;
+    }
+
+    .house-price-info-list-li:nth-child(3) {
+        margin-right: 70px;
     }
 }
 
@@ -1496,6 +1712,10 @@ header {
     .features-height {
         height: 158px;
     }
+
+    .house-price-info-list-li:nth-child(4) {
+        list-style-type: none;
+    }
 }
 
 @media (max-width: 825px) {
@@ -1519,6 +1739,24 @@ header {
     .features-height {
         height: 158px;
     }
+
+    .house-price-info-button {
+        flex-wrap: wrap;
+        flex-flow: column-reverse;
+    }
+
+    .house-price-info .chill-button {
+        width: 100%;
+    }
+
+    .house-price-info {
+        width: 80%;
+    }
+
+    .house-price-img-container-mini {
+        scale: 1;
+        left: 50%;
+    }
 }
 
 @media (max-width: 685px) {
@@ -1529,6 +1767,10 @@ header {
     .features-height {
         height: 158px;
     }
+
+    .show-place-img-2 {
+        height: 323px;
+    }
 }
 
 @media (max-width: 600px) {
@@ -1538,6 +1780,14 @@ header {
 
     .features-height {
         height: 158px;
+    }
+
+    .house-price-mini-content {
+        display: block;
+    }
+
+    .house-price-img-container-mini {
+        display: none;
     }
 }
 
@@ -1566,6 +1816,43 @@ header {
 
     .features-container img {
         margin-left: -30px;
+    }
+
+    .house-price-info {
+        width: 100%;
+        margin-left: 25px;
+        padding-right: 25px;
+    }
+
+    .house-price-content:nth-child(2n+1) {
+        width: 88%;
+    }
+
+    .house-price-info-img {
+        overflow: visible;
+        width: 108%;
+    }
+
+    .house-price-info-img img {
+        overflow: visible;
+        width: 105.1%;
+    }
+
+    .house-price-info-button .chill-button {
+        margin-top: 20px;
+        margin-bottom: 20px;
+    }
+
+    .house-price-info-button {
+        margin-top: 25px;
+    }
+
+    .house-price-info-price {
+        margin-left: 0px;
+    }
+
+    .house-price-info-prew-unit-last {
+        margin-right: 5px;
     }
 }
 
@@ -1610,5 +1897,17 @@ header {
 
     .features-height {
         height: 158px;
+    }
+
+    .show-place-img-2 {
+        height: 213.5px;
+    }
+
+    .house-price-info-list-li:nth-child(3) {
+        margin-left: 15px;
+    }
+
+    .house-price-info-list-li:nth-child(5) {
+        margin-left: 15px;
     }
 }
