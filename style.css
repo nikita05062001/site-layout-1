@@ -262,7 +262,6 @@ header {
 }
 
 .header-burger {
-
     font-size: 0;
     color: transparent;
     width: 18px;
@@ -895,10 +894,10 @@ header {
 .geolocation {
     margin-left: 191px;
     margin-top: 120px;
-    max-width: 1740px;
 }
 
 .geolocation-content {
+    max-width: 1740px;
     font-family: Ubuntu;
     font-style: normal;
     font-weight: normal;
@@ -934,8 +933,12 @@ header {
 }
 
 .geolocation-map {
-    max-width: 1740px;
+    max-width: 100%;
     margin-top: 54px;
+}
+
+.geolocation-map img {
+    max-width: 100%;
 }
 
 .geolocation-messenger {
@@ -1073,6 +1076,7 @@ header {
         margin-left: 90px;
         margin-top: 116px;
         max-width: 1740px;
+        margin-right: 90px;
     }
 
     .geolocation-info {
@@ -1081,6 +1085,10 @@ header {
 
     .geolocation-messenger p {
         margin-top: 71px;
+    }
+
+    .house-price-info-img {
+        margin-top: -2px;
     }
 
 }
@@ -1106,6 +1114,7 @@ header {
 
     .house-price-prewiev-img {
         width: 60%;
+        z-index: 10;
     }
 
     .house-price-prewiev-img img {
@@ -1114,7 +1123,7 @@ header {
 
     .house-price-info-img {
         width: 50%;
-        margin-top: -3px;
+        margin-top: -2px;
         z-index: 0;
     }
 
@@ -1127,6 +1136,7 @@ header {
         margin-top: -5px;
         z-index: 0;
     }
+
 }
 
 @media (max-width: 1867px) {
@@ -1210,7 +1220,17 @@ header {
         margin-left: 30px;
     }
 
+    .geolocation-title {
+        font-size: 30px;
+    }
 
+    .geolocation-info {
+        font-size: 18px;
+    }
+
+    .geolocation-messenger {
+        font-size: 18px;
+    }
 }
 
 @media (max-width: 1645px) {
@@ -1353,6 +1373,11 @@ header {
 
     .house-price-img-container-mini {
         left: 66%;
+    }
+
+    .geolocation {
+        margin-left: 45px;
+        margin-right: 45px;
     }
 }
 
@@ -1532,6 +1557,44 @@ header {
     .showplace-mini-img img {
         width: 100%;
     }
+
+    .comments-user-grade {
+        height: 120px;
+        width: 120px;
+        position: relative;
+    }
+
+    .comments-content-stars {
+        position: absolute;
+        left: 155px;
+        top: 35px;
+    }
+
+    .comments-content-img {
+        width: 120px;
+    }
+
+    .comments-content-img img {
+        width: 120px;
+    }
+
+    .comments-user-name {
+        font-size: 20px;
+    }
+
+    .comments-user-text {
+        font-size: 16px;
+        margin-right: 25px;
+    }
+
+    .comments-user-text {
+        line-height: 24px;
+    }
+
+    .geolocation {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
 }
 
 @media (max-width: 1279px) {
@@ -1542,6 +1605,37 @@ header {
 
     .house-price-img-container-mini {
         left: 68%;
+    }
+
+    .geolocation-number {
+        margin-right: 20px;
+    }
+
+    .geolocation-street {
+        margin-left: 0px;
+        margin-right: 40px;
+    }
+
+    .geolocation-map {
+        margin-top: 25px;
+    }
+}
+
+@media (max-width: 1120px) {
+    .geolocation-info {
+        display: block;
+    }
+
+    .geolocation-info {
+        margin-top: 15px;
+    }
+
+    .geolocation-number {
+        margin-bottom: 20px;
+    }
+
+    .geolocation-street {
+        margin-bottom: 20px;
     }
 }
 
@@ -1573,6 +1667,10 @@ header {
 
     .house-price-info-list-li:nth-child(3) {
         margin-right: 70px;
+    }
+
+    .comments-user-date {
+        font-size: 14px;
     }
 }
 
@@ -1716,6 +1814,16 @@ header {
     .house-price-info-list-li:nth-child(4) {
         list-style-type: none;
     }
+
+    .geolocation-map {
+        overflow: hidden;
+    }
+
+    .geolocation-map img {
+        height: 600px;
+        max-width: none;
+        margin-left: -200px;
+    }
 }
 
 @media (max-width: 825px) {
@@ -1757,6 +1865,12 @@ header {
         scale: 1;
         left: 50%;
     }
+
+    .comments-user-text {
+        max-width: none;
+        margin-left: -171px;
+        margin-top: 100px;
+    }
 }
 
 @media (max-width: 685px) {
@@ -1770,6 +1884,26 @@ header {
 
     .show-place-img-2 {
         height: 323px;
+    }
+
+    .geolocation-messenger {
+        flex-wrap: wrap;
+        justify-content: center;
+        flex-flow: column-reverse;
+    }
+
+    .geolocation-messenger-ico a:nth-child(1) img {
+        margin-left: 0px;
+    }
+
+    .geolocation-messenger p {
+        margin: 0 auto;
+        margin-top: 25px;
+    }
+
+    .geolocation-messenger-ico {
+        margin: 0 auto;
+        margin-top: 25px;
     }
 }
 
@@ -1789,6 +1923,37 @@ header {
     .house-price-img-container-mini {
         display: none;
     }
+
+    .comments {
+        margin-left: 25px;
+        margin-right: 0px;
+        margin-top: 25px;
+    }
+
+    .comments-content-title {
+        margin-bottom: 40px;
+    }
+
+    .geolocation-map img {
+        margin-left: -300px;
+    }
+
+    .geolocation {
+        margin: 0;
+    }
+
+    .geolocation-title {
+        margin-left: 25px;
+    }
+
+    .geolocation-info {
+        margin-left: 25px;
+        margin-right: 25px;
+    }
+
+    .geolocation-street {
+        margin-right: 0px;
+    }
 }
 
 @media (max-width: 500px) {
@@ -1802,6 +1967,29 @@ header {
 
     .features-container img {
         scale: 1.5;
+    }
+
+    .comments-content-img img {
+        width: 60px;
+    }
+
+    .comments-content-img {
+        width: 60px;
+        margin-top: 10px;
+    }
+
+    .comments-user-text-content {
+        margin-left: 15px;
+    }
+
+    .comments-content-stars {
+        left: 50px;
+        scale: 0.8;
+    }
+
+    .comments-user-text {
+        margin-left: -75px;
+        margin-top: 35px;
     }
 }
 
@@ -1853,6 +2041,10 @@ header {
 
     .house-price-info-prew-unit-last {
         margin-right: 5px;
+    }
+
+    .geolocation-map img {
+        margin-left: -450px;
     }
 }
 
