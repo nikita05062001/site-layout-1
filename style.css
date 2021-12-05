@@ -254,11 +254,16 @@ header {
 }
 
 .burger {
-    position: relative;
+
     cursor: pointer;
     display: none;
-    margin: 25px;
-    margin-top: 20px;
+    margin-left: 25px;
+    margin-right: 45px;
+    margin-top: 1px;
+    background: none;
+    border: none;
+    position: relative;
+    padding: 4.5px 9px;
 }
 
 .header-burger {
@@ -267,7 +272,9 @@ header {
     width: 18px;
     background-color: #161616;
     height: 2px;
-
+    position: absolute;
+    left: 0px;
+    top: 0px
 }
 
 .header-burger::before {
@@ -1718,7 +1725,7 @@ header {
     .house-info-main {}
 
     .button-header {
-        height: 65px;
+        height: 64px;
     }
 
     .house-info-img img {
@@ -2062,7 +2069,7 @@ header {
     .house-info-img {
         scale: 0.9;
         margin-left: -114px;
-        margin-top: -15px;
+        margin-top: -16px;
     }
 
     .house-info-img img {
