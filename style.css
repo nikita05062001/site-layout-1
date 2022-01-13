@@ -264,6 +264,7 @@ header {
     border: none;
     position: relative;
     padding: 4.5px 9px;
+
 }
 
 .header-burger {
@@ -274,7 +275,8 @@ header {
     height: 2px;
     position: absolute;
     left: 0px;
-    top: 0px
+    top: 0px;
+    transition: all 0.3s ease 0s;
 }
 
 .header-burger::before {
@@ -286,6 +288,24 @@ header {
     top: 7px;
     margin: 0px;
     background-color: #161616;
+    transition: all 0.3s ease 0s;
+}
+
+.burger._active {
+    transform: rotate(38deg);
+}
+
+.burger._active .header-burger {
+    top: 50%;
+    transform: rotate(-75deg) translate(0, -50%);
+    background-color: red;
+}
+
+.burger._active .header-burger::before {
+    top: 50%;
+    transform: rotate(75deg) translate(0, -50%);
+    width: 18px;
+    background-color: red;
 }
 
 .scroll-element {
@@ -708,10 +728,9 @@ header {
 
 .house-price-info-list-li {
     list-style-type: disc;
-    margin-right: 51px;
+    margin-right: 22px;
     padding-left: 18px;
     text-align: left;
-
     font-family: 'Ubuntu', sans-serif;
     font-style: normal;
     font-weight: normal;
@@ -748,6 +767,7 @@ header {
 
 .house-price-info-content {
     display: flex;
+    margin-left: 10px;
 }
 
 .house-price-info-price {
@@ -1227,6 +1247,7 @@ header {
     .house-img {
 
         max-width: 66.66666666666666666%;
+
     }
 
     .house-info-img {
@@ -1388,7 +1409,8 @@ header {
 
     .house-price-info-list-ul {
         flex-wrap: wrap;
-        width: 110%;
+        width: 100%;
+        overflow: hidden;
     }
 }
 
@@ -1474,7 +1496,7 @@ header {
         position: fixed;
         left: 50%;
         transform: translate(-50%, 0%);
-        width: 100%;
+        width: 101%;
         background-color: white;
         height: 75px;
         z-index: 2000;
@@ -1498,8 +1520,14 @@ header {
         padding-top: 10px;
         text-align: right;
         font-size: 12px;
-        background-color: #a6e4ff;
+        /* background-color: #a6e4ff; */
+        background-color: #E1FFEE;
+        color: #219653;
         width: 100%;
+    }
+
+    .header-content._active .header-nav .nav-list .header-li:first-child {
+        border-top: 1px #219653 solid;
     }
 
     .header-content._active .header-nav .nav-list .header-li a {
@@ -1538,7 +1566,7 @@ header {
     }
 
     .header-button {
-        z-index: 10;
+        z-index: -1;
     }
 
     .button-header {
@@ -1551,7 +1579,7 @@ header {
     }
 
     .house-img {
-        max-width: 66.666666666%;
+        max-width: 122%;
         height: 760px;
         margin-top: 5px;
     }
@@ -1633,6 +1661,7 @@ header {
     .house-price-info-title {
         font-size: 30px;
         line-height: 42px;
+        margin-left: 10px;
     }
 
     .house-price-info-characteristic {
@@ -1832,9 +1861,10 @@ header {
 
     .house-img {
         margin-top: -6px;
-        max-width: 100%;
+        /* max-width: 100%; */
         overflow: hidden;
         position: static;
+        width: 375px;
     }
 
     .house-info-img {
@@ -1862,6 +1892,9 @@ header {
     .header-content {
         height: 64px;
         z-index: 100;
+        /* width: 375px; */
+        /* width: 100%; */
+        /* margin-left: -29px; */
     }
 
     .button-header {
@@ -1964,12 +1997,15 @@ header {
 
     .geolocation-map {
         overflow: hidden;
+        width: 700px;
+        height: 700px;
+        position: relative;
     }
 
     .geolocation-map img {
         height: 600px;
         max-width: none;
-        margin-left: -200px;
+        /* margin-left: -200px; */
     }
 }
 
@@ -1980,11 +2016,17 @@ header {
 
     .house-img {
         position: relative;
+        width: 100%;
     }
 
     .house-img img {
         position: absolute;
-        left: -400px;
+        left: 50%;
+        top: 50%;
+        height: 800px;
+        width: 100%;
+        transform: translate(-50%, -50%);
+        object-fit: cover;
     }
 
     .features-container {
@@ -2086,7 +2128,7 @@ header {
     }
 
     .geolocation-map img {
-        margin-left: -300px;
+        /* margin-left: -300px; */
     }
 
     .geolocation {
@@ -2159,8 +2201,9 @@ header {
 
     .house-price-info {
         width: 100%;
-        margin-left: 25px;
-        padding-right: 25px;
+        padding-left: 0px;
+        /* padding-right: 25px; */
+        padding-right: 0px;
     }
 
     .house-price-content:nth-child(2n+1) {
@@ -2168,13 +2211,13 @@ header {
     }
 
     .house-price-info-img {
-        overflow: visible;
-        width: 108%;
+        overflow: hidden;
+        width: 100%;
     }
 
     .house-price-info-img img {
-        overflow: visible;
-        width: 100%;
+        overflow: hidden;
+        width: 375px;
     }
 
     .house-price-info-button .chill-button {
@@ -2195,7 +2238,15 @@ header {
     }
 
     .geolocation-map img {
-        margin-left: -450px;
+        /* margin-left: 0px; */
+        /* width: 100%; */
+        position: absolute;
+        left: 84%;
+        top: 50%;
+        height: 743px;
+        width: 700px;
+        transform: translate(-50%, -50%);
+        object-fit: cover;
     }
 
     .features-container img {
@@ -2213,6 +2264,23 @@ header {
 
     .house-price-info .chill-button:nth-child(2n+1) {
         width: 70%;
+        margin-left: 10px;
+    }
+
+    .house-price-info-list {
+        margin-left: 10px;
+    }
+
+    .house-price-info-title {
+        margin-left: 10px;
+    }
+
+    .house-price-info-characteristic {
+        margin-left: 10px;
+    }
+
+    .house-price-info-text {
+        margin-left: 10px;
     }
 }
 
